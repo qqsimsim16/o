@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f3ec"><title>奶粉點心靈感清單</title>
+<style>
+:root{--bg:#f7f3ec;--paper:#fffdf9;--ink:#3f403a;--muted:#77786f;--accent:#9b8066;--line:#e9e0d5;--green:#e7ede3}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif;line-height:1.65}
+header{padding:48px 20px 34px;text-align:center;background:linear-gradient(135deg,#f4e9dd,#e9eee5)}header .eyebrow{font-size:12px;letter-spacing:.18em;color:#827462}
+h1{font-size:clamp(28px,6vw,42px);margin:8px 0;font-weight:750;letter-spacing:.04em}header p{margin:8px auto 0;max-width:560px;color:#69695f;font-size:14px}
+main{max-width:1000px;margin:28px auto;padding:0 16px 50px}.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:18px}
+input,select{border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:12px 14px;font:inherit;color:var(--ink)}input{flex:1;min-width:190px}select{min-width:140px}
+.count{font-size:13px;color:var(--muted);margin-left:auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 5px 18px #6c59400a}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}h2{font-size:18px;margin:0 0 5px}.tag{display:inline-block;background:var(--green);border-radius:20px;padding:3px 9px;font-size:11px;color:#596653;white-space:nowrap}
+.desc{font-size:13px;color:var(--muted);margin:8px 0 12px}.meta{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;color:#716d63;margin-bottom:10px}
+.details{border-top:1px solid var(--line);padding-top:10px;font-size:13px}.details b{font-weight:650}.details p{margin:5px 0}
+.tip{background:#fff8ed;border-radius:14px;padding:14px 16px;margin:18px 0;font-size:13px;color:#6c6253}
+footer{text-align:center;color:#8b877e;font-size:12px;padding:20px}.empty{display:none;text-align:center;padding:34px;color:var(--muted)}
+@media(max-width:520px){header{padding-top:38px}.count{width:100%;margin-left:0}}
+</style></head>
+<body>
+<header><div class="eyebrow">KIDS SNACK IDEAS · 家常點心</div><h1>奶粉點心靈感清單</h1><p>家裡有奶粉，也能變化出不同的小點心。先從材料簡單、做法容易的開始吧！</p></header>
+<main>
+<div class="tools"><input id="search" type="search" placeholder="搜尋點心，例如：鬆餅、香蕉…" aria-label="搜尋點心"><select id="category" aria-label="依類型篩選"><option value="全部">全部類型</option><option>蒸煮類</option><option>烘烤類</option><option>免烤／冷藏</option><option>平底鍋類</option></select><span class="count" id="count"></span></div>
+<div class="tip">小提醒：以下以一般食材製作為主，奶粉可依配方加入；若使用嬰兒配方奶粉，請依產品標示沖調與保存，不要把奶粉當成可任意加熱或長時間存放的常溫奶液。</div>
+<section class="grid" id="grid">
+<article class="card" data-category="平底鍋類" data-search="奶香鬆餅 早餐 麵粉 雞蛋"><div class="top"><div><h2>奶香小鬆餅</h2><div class="desc">軟綿綿，適合做成一口大小。</div></div><span class="tag">平底鍋類</span></div><div class="meta">⏱ 約 15 分鐘　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>低筋麵粉、奶粉、雞蛋、牛奶或水、少量油。</p><p><b>做法：</b>材料拌成濃稠麵糊，靜置 5 分鐘；小火煎至表面冒泡後翻面，兩面熟透即可。</p></div></article>
+<article class="card" data-category="烘烤類" data-search="奶粉小饅頭 餅乾 澱粉"><div class="top"><div><h2>奶粉小饅頭餅</h2><div class="desc">小巧酥鬆，適合做成小圓球。</div></div><span class="tag">烘烤類</span></div><div class="meta">⏱ 約 30 分鐘　·　難度：中等</div><div class="details"><p><b>主要材料：</b>馬鈴薯澱粉、奶粉、蛋黃、少量糖、無鹽奶油。</p><p><b>做法：</b>奶油與蛋黃拌勻，加入粉類揉成團，搓成小球；以約 150–160°C 烘烤至熟、底部微上色。</p></div></article>
+<article class="card" data-category="蒸煮類" data-search="奶香蒸蛋糕 雞蛋 麵粉"><div class="top"><div><h2>奶香蒸蛋糕</h2><div class="desc">不用烤箱，蒸鍋就能完成。</div></div><span class="tag">蒸煮類</span></div><div class="meta">⏱ 約 25 分鐘　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>雞蛋、低筋麵粉、奶粉、少量糖、牛奶或水。</p><p><b>做法：</b>蛋液打至蓬鬆，拌入液體與過篩粉類；倒入小模具，水滾後中小火蒸熟。</p></div></article>
+<article class="card" data-category="平底鍋類" data-search="香蕉奶香蛋餅 香蕉 雞蛋"><div class="top"><div><h2>香蕉奶香蛋餅</h2><div class="desc">熟香蕉自帶甜味，材料很精簡。</div></div><span class="tag">平底鍋類</span></div><div class="meta">⏱ 約 10 分鐘　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>熟香蕉、雞蛋、奶粉、少量麵粉。</p><p><b>做法：</b>香蕉壓泥，加入蛋、奶粉與麵粉拌勻；小火煎成小片，確認中心熟透。</p></div></article>
+<article class="card" data-category="免烤／冷藏" data-search="奶香優格冰磚 優格 水果 冷凍"><div class="top"><div><h2>奶香優格水果冰磚</h2><div class="desc">夏天點心，可搭配當季水果。</div></div><span class="tag">免烤／冷藏</span></div><div class="meta">⏱ 冷凍約 3 小時　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>無糖優格、少量奶粉、切碎水果。</p><p><b>做法：</b>優格拌入奶粉，加入細切水果，放入小模具冷凍至定型；食用前稍微回溫。</p></div></article>
+<article class="card" data-category="烘烤類" data-search="奶香小餅乾 奶油 麵粉"><div class="top"><div><h2>奶香小餅乾</h2><div class="desc">可壓模做造型，親子一起玩。</div></div><span class="tag">烘烤類</span></div><div class="meta">⏱ 約 35 分鐘　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>低筋麵粉、奶粉、無鹽奶油、蛋黃、少量糖。</p><p><b>做法：</b>奶油軟化後與糖拌勻，加入蛋黃及粉類揉成團；擀平壓模，約 160–170°C 烤至熟。</p></div></article>
+<article class="card" data-category="蒸煮類" data-search="玉米奶香蒸糕 玉米 蔬菜"><div class="top"><div><h2>玉米奶香蒸糕</h2><div class="desc">鹹甜清爽，也能加入其他蔬菜。</div></div><span class="tag">蒸煮類</span></div><div class="meta">⏱ 約 25 分鐘　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>玉米粒、雞蛋、麵粉、奶粉、水。</p><p><b>做法：</b>玉米切碎，與其他材料拌成麵糊，倒入容器蒸至中心凝固熟透。</p></div></article>
+<article class="card" data-category="平底鍋類" data-search="奶香地瓜煎餅 地瓜 番薯"><div class="top"><div><h2>奶香地瓜煎餅</h2><div class="desc">地瓜泥加奶粉，做成柔軟小餅。</div></div><span class="tag">平底鍋類</span></div><div class="meta">⏱ 約 20 分鐘　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>蒸熟地瓜、奶粉、麵粉、少量水。</p><p><b>做法：</b>地瓜壓泥，加入奶粉和麵粉揉成不黏手的團；壓成小圓餅，小火煎熟。</p></div></article>
+<article class="card" data-category="免烤／冷藏" data-search="奶香燕麥布丁 燕麥 牛奶"><div class="top"><div><h2>奶香燕麥布丁</h2><div class="desc">柔軟滑順，可調整濃稠度。</div></div><span class="tag">免烤／冷藏</span></div><div class="meta">⏱ 冷藏約 2 小時　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>即食燕麥、牛奶、奶粉、原味優格（可選）。</p><p><b>做法：</b>燕麥、奶粉與牛奶拌勻冷藏至軟化；食用前拌入優格或水果泥。</p></div></article>
+<article class="card" data-category="烘烤類" data-search="奶香香蕉燕麥球 燕麥 香蕉"><div class="top"><div><h2>香蕉奶粉燕麥球</h2><div class="desc">不需要打發，拌好就能整形。</div></div><span class="tag">烘烤類</span></div><div class="meta">⏱ 約 25 分鐘　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>熟香蕉、即食燕麥、奶粉。</p><p><b>做法：</b>香蕉壓泥，加入燕麥與奶粉拌勻，搓成小球或壓成餅；烤至定型熟透。</p></div></article>
+<article class="card" data-category="蒸煮類" data-search="牛奶小方 奶凍 玉米粉"><div class="top"><div><h2>奶香牛奶小方</h2><div class="desc">冷藏定型後切成小塊。</div></div><span class="tag">蒸煮類</span></div><div class="meta">⏱ 加熱約 10 分鐘＋冷藏　·　難度：簡單</div><div class="details"><p><b>主要材料：</b>牛奶、奶粉、玉米粉，少量糖（可不加）。</p><p><b>做法：</b>所有材料先調勻，再以小火不停攪拌至濃稠；倒入容器冷藏定型後切塊。</p></div></article>
+<article class="card" data-category="平底鍋類" data-search="奶香小餐包 麵粉 酵母"><div class="top"><div><h2>奶香小餐包（平底鍋版）</h2><div class="desc">迷你尺寸，適合當早餐或點心。</div></div><span class="tag">平底鍋類</span></div><div class="meta">⏱ 約 1.5 小時含發酵　·　難度：中等</div><div class="details"><p><b>主要材料：</b>高筋麵粉、奶粉、酵母、糖、油、水。</p><p><b>做法：</b>材料揉成光滑麵團，發酵至約兩倍大；分小份整形再醒發，以有蓋平底鍋小火烘熟。</p></div></article>
+</section><div class="empty" id="empty">找不到符合的點心，換個關鍵字試試看。</div>
+</main><footer>奶粉點心靈感清單 · 製作時請依孩子年齡調整質地與食材</footer>
+<script>
+const search=document.getElementById('search'),category=document.getElementById('category'),cards=[...document.querySelectorAll('.card')],count=document.getElementById('count'),empty=document.getElementById('empty');
+function filter(){const q=search.value.trim().toLowerCase(),c=category.value;let n=0;cards.forEach(card=>{const ok=(c==='全部'||card.dataset.category===c)&&(card.dataset.search+' '+card.innerText).toLowerCase().includes(q);card.style.display=ok?'':'none';if(ok)n++});count.textContent='共 '+n+' 款點心';empty.style.display=n?'none':'block'}
+search.addEventListener('input',filter);category.addEventListener('change',filter);filter();
+</script></body></html>
